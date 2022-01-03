@@ -163,7 +163,6 @@ class CookiesConsent {
                 el.src = '';
                 el.src = backUpSrc;
             } else {
-                console.log('a');
                 let newInlineScript = el;
                 el.removeAttribute('data-cc_category');
                 el.setAttribute('type', 'text/javascript');
