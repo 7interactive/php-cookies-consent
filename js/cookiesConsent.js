@@ -1,13 +1,7 @@
 class CookiesConsent {
-    constructor(langCode, configPath) {
+    constructor(langCode) {
         this.instance = this;
-
-        if (configPath) {
-            this.configPath = configPath;
-        } else {
-            this.configPath = "./config/config.json";
-        }
-
+        this.configPath = 'config.json';
         this.configuration = this.loadConfiguration();
 
         if (langCode) {
@@ -147,7 +141,7 @@ class CookiesConsent {
         $.ajax({
             url: handlerLink,
             method: "POST",
-            data: {categories: categories},
+            data: {data: categories.join(',')},
             success: function (response) {}
         });
     }
