@@ -3,9 +3,9 @@
     "type": "library",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "7interactive\\CookiesConsent\\": "src/"
-        }
+        "classmap": [
+            "src/"
+        ]
     },
     "authors": [
         {
