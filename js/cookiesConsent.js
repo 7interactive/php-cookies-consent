@@ -8,8 +8,6 @@ class CookiesConsent {
             this.configPath = "./config/config.json";
         }
 
-        console.log(this.configPath);
-
         this.configuration = this.loadConfiguration();
 
         if (langCode) {
