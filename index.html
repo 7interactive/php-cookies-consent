@@ -82,12 +82,12 @@
             <h3>Step 2 - set handler</h3>
             <p>Example:</p>
             <code>
-                public function handleSentCookieConsent() {
-                    $data = $this->getHttpRequest()->getPost('data');
-                    $cookie = new CookieConsent();
-                    $cookie->setToken('a322d7c87373842f6efcb318fe31ee73');
-                    $cookie->setData($data);
-                    $cookie->send();
+                public function handleSendCookieConsent() {<br>
+                    $data = $this->getHttpRequest()->getPost('data');<br>
+                    $cookie = new CookieConsent();<br>
+                    $cookie->setToken('a322d7c87373842f6efcb318fe31ee73');<br>
+                    $cookie->setData($data);<br>
+                    $cookie->send();<br>
                 }
             </code>
         </div>
@@ -100,6 +100,8 @@
     cookiesConsent = new CookiesConsent();
     cookiesConsent.init();
 </script>
+
+<script type="text/plain" data-cc_category="strictly_necessary_cookies">console.log('inline - strictly_necessary_cookies');</script>
 
 </body>
 </html>

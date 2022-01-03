@@ -1,7 +1,7 @@
 class CookiesConsent {
     constructor(langCode) {
         this.instance = this;
-        this.configPath = 'config.json';
+        this.configPath = './config/config.json';
         this.configuration = this.loadConfiguration();
 
         if (langCode) {
@@ -156,12 +156,20 @@ class CookiesConsent {
         }
 
         function rebuildElement(el) {
-            el.setAttribute('type', 'text/javascript');
-            el.removeAttribute('data-cc_category');
-
-            let backUpSrc = el.src;
-            el.src = '';
-            el.src = backUpSrc;
+            if (el.src) {
+                let backUpSrc = el.src;
+                el.setAttribute('type', 'text/javascript');
+                el.removeAttribute('data-cc_category');
+                el.src = '';
+                el.src = backUpSrc;
+            } else {
+                console.log('a');
+                let newInlineScript = el;
+                el.removeAttribute('data-cc_category');
+                el.setAttribute('type', 'text/javascript');
+                el.after(newInlineScript);
+                el.remove();
+            }
         }
     }
 
