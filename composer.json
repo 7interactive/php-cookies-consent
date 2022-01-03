@@ -1,0 +1,18 @@
+{
+    "name": "7interactive/cookies-consent",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "7interactive\\CookiesConsent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Bešina",
+            "email": "7int.adam@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
