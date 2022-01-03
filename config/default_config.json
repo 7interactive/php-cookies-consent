@@ -1,0 +1,51 @@
+{
+	"global": {
+		"defaultLang": "cs",
+		"levels": {
+			"strictly": true,
+			"marketing": false
+		}
+	},
+	"translations": {
+		"cs": {
+			"headline": "🧇 Používáme sušenky (cookies)! 🧇",
+			"description": "Ahoj, abychom ti mohli servírovat co nejlepší data tak sbíráme sušenky co za sebou trousíš, nevadí ti to?",
+			"settingButtonAnchor": "Nastavení",
+			"buttonDenied": "ZAMÍTNOUT VŠE",
+			"buttonApproved": "POVOLIT VŠE",
+			"settingHeadline": "Nastavení cookies",
+			"settingButtonClose": "Zavřít",
+			"settingButtonSave": "Uložit",
+			"levels": {
+				"strictly": {
+					"name": "Cookiesky",
+					"description": "Popsisek",
+					"cookies": {
+						"cookie_01": {
+							"name": "Cookies Název",
+							"description": "Jedna dvě tři"
+						},
+						"cookie_02": {
+							"name": "Pes",
+							"description": " tři"
+						}
+					}
+				},
+				"marketing": {
+					"name": "Marketingkové",
+					"description": "Popsisek",
+					"cookies": {
+						"cookie_01": {
+							"name": "Cookies",
+							"description": "Jedna dvě tři"
+						},
+						"cookie_02": {
+							"name": "Cookies",
+							"description": "Jedna dvě tři"
+						}
+					}
+				}
+			}
+		}
+	}
+}

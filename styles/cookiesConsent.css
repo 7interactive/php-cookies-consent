@@ -1,0 +1,119 @@
+#__cookieConsent {
+  width: 400px;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+}
+#__cookieConsent button {
+  cursor: pointer;
+}
+#__cookieConsent #__cookieConsent_dialog {
+  display: block;
+  border: 1px solid #E8E8E8;
+  padding: 1rem;
+  background: #fff;
+}
+#__cookieConsent #__cookieConsent_dialog .__cookieConsent_header {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+#__cookieConsent #__cookieConsent_dialog .__cookieConsent_description {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+#__cookieConsent #__cookieConsent_dialog .__cookieConsent_description #__cookieConsent_btn_setting {
+  border: 0px;
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#__cookieConsent #__cookieConsent_dialog .__cookieConsent_buttons {
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+#__cookieConsent #__cookieConsent_dialog .__cookieConsent_buttons button {
+  width: 49%;
+  margin: 1px;
+  display: inline-block;
+  line-height: 2rem;
+  float: left;
+}
+
+.__cookiesConsent_setting_fade {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  top: 0px;
+  left: 0px;
+  z-index: 1000000;
+}
+
+#__cookiesConsent_setting {
+  height: fit-content;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  z-index: 1000010;
+  pointer-events: none;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog {
+  width: 500px;
+  max-width: 500px;
+  pointer-events: initial;
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_headline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category {
+  margin-bottom: 1rem;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category label input[type=checkbox] {
+  width: 1.3rem;
+  height: 1.3rem;
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category label.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category table {
+  width: 100%;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog .__cookiesConsentSetting_categories .__cookiesConsentSetting_category table td {
+  width: 50%;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog #__cookiesConsentSetting_butons {
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+#__cookiesConsent_setting .__cookiesConsentSetting_dialog #__cookiesConsentSetting_butons button {
+  width: 49%;
+  margin: 1px;
+  display: inline-block;
+  line-height: 2rem;
+  float: left;
+}
+
+/*# sourceMappingURL=cookiesConsent.css.map */
