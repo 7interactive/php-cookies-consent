@@ -8,11 +8,11 @@
 	},
 	"translations": {
 		"cs": {
-			"headline": "🧇 Používáme sušenky (cookies)! 🧇",
-			"description": "Ahoj, abychom ti mohli servírovat co nejlepší data tak sbíráme sušenky co za sebou trousíš, nevadí ti to?",
+			"headline": "Tento web využívá soubory cookies",
+			"description": "Na našem webu získáváme, ukládáme a zpracováváme informace o jeho uživatelích. K tomuto účelu využíváme soubory cookies, které nám pomáhají zkvalitnit naše služby a personalizovat nabídky. Pro některé účely zpracování je vyžadován Váš souhlas, který vyjádříte volbou „Přijmout vše“. Nastavení cookies můžete změnit volbou „Nastavení“.",
 			"settingButtonAnchor": "Nastavení",
-			"buttonDenied": "ZAMÍTNOUT VŠE",
-			"buttonApproved": "POVOLIT VŠE",
+			"buttonDenied": "Zamítnout vše",
+			"buttonApproved": "Přijmout vše",
 			"settingHeadline": "Nastavení cookies",
 			"settingButtonClose": "Zavřít",
 			"settingButtonSave": "Uložit",

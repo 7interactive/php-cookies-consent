@@ -62,7 +62,7 @@ class CookiesConsent {
 
     generateCCModalHtml() {
         let translation = this.getTranslation();
-        let html = $('<div id="__cookieConsent"><div id="__cookieConsent_dialog"><div class="__cookieConsent_header"></div><div class="__cookieConsent_description"><span></span><button id="__cookieConsent_btn_setting"></button></div><div class="__cookieConsent_buttons"><button id="__cookieConsent_btn_denied"></button><button id="__cookieConsent_btn_approved"></button></div></div></div>');
+        let html = $('<div id="__cookieConsent"><div id="__cookieConsent_dialog"><div class="__cookieConsent_header"></div><div class="__cookieConsent_description"><span></span></div><div class="__cookieConsent_buttons"><button id="__cookieConsent_btn_approved"></button><button id="__cookieConsent_btn_setting"></button><button id="__cookieConsent_btn_denied"></button></div></div></div>');
         html.find('.__cookieConsent_header').html(translation.headline);
         html.find('.__cookieConsent_description span').html(translation.description);
         html.find('#__cookieConsent_btn_setting').html(translation.settingButtonAnchor);
