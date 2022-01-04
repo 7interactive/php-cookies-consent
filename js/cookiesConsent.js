@@ -275,7 +275,8 @@ class CookiesSetting extends CookiesConsent {
                 disabledClass = 'class="disabled"';
             }
 
-            let category = '<div class="__cookiesConsentSetting_category"><label ' + disabledClass + '><input type="checkbox" name="' + index + '" ' + checked + '/>' + translation[index].name + '</label><p>' + translation[index].description + '</p>' + instance.getCookiesByCategory(index) + '</div>';
+            //let category = '<div class="__cookiesConsentSetting_category"><label ' + disabledClass + '><input type="checkbox" name="' + index + '" ' + checked + '/>' + translation[index].name + '</label><p>' + translation[index].description + '</p>' + instance.getCookiesByCategory(index) + '</div>';
+            let category = '<div class="__cookiesConsentSetting_category"><label ' + disabledClass + '><input type="checkbox" name="' + index + '" ' + checked + '/>' + translation[index].name + '</label><p>' + translation[index].description + '</p>' + '</div>';
 
             html += category;
         });

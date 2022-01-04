@@ -18,8 +18,8 @@
 			"settingButtonSave": "Uložit",
 			"levels": {
 				"strictly": {
-					"name": "Cookiesky",
-					"description": "Popsisek",
+					"name": "Nezbytné cookies",
+					"description": "Tyto cookies jsou nezbytné pro zajištění základní funkčnosti webových stránek a nelze bez nich web používat.",
 					"cookies": {
 						"cookie_01": {
 							"name": "Cookies Název",
@@ -33,7 +33,7 @@
 				},
 				"marketing": {
 					"name": "Marketingkové",
-					"description": "Popsisek",
+					"description": "Reklamní cookies se využívají k zobrazování cílené reklamy. Bez těchto cookies se vám reklamy budou nadále zobrazovat, budou však pro vás méně relevantní.",
 					"cookies": {
 						"cookie_01": {
 							"name": "Cookies",

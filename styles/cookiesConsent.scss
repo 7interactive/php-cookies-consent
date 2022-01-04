@@ -88,12 +88,14 @@
   .__cookiesConsentSetting_dialog {
     width: 500px;
     max-width: 500px;
+    max-height: 90vh;
     pointer-events: initial;
     display: block;
     padding: 1rem;
     margin: 0 auto;
     background: #ffffff;
     border: 1px solid #e8e8e8;
+    overflow-x: auto;
 
     .__cookiesConsentSetting_headline {
       font-size: 1.5rem;
@@ -128,6 +130,10 @@
           td {
             width: 50%;
           }
+        }
+
+        p {
+          font-size: 0.9rem;
         }
       }
     }
