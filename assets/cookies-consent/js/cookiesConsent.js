@@ -3,10 +3,11 @@ class CookiesConsent {
         this.instance = this;
 
         if (productionMode) {
-            this.configPath = './config/config.json';
+            this.configPath = './assets/cookies-consent/config/config.json';
         } else {
             this.configPath = './../../../example/config.json';
         }
+
         this.configuration = this.loadConfiguration();
 
         if (langCode) {
@@ -118,6 +119,8 @@ class CookiesConsent {
         Cookies.setCookie(levels, 356);
         CookiesConsent.allowScripts(levels);
         CookiesConsent.destroy();
+
+        this.saveConsent(levels);
     }
 
     onButtonSetting() {
@@ -130,15 +133,7 @@ class CookiesConsent {
     }
 
     getNecessarilyCookies() {
-        var necessarilyCookies = [];
-
-        $.each(this.getAllCookiesLevels(), function (index, el) {
-            if (el) {
-                necessarilyCookies.push(index);
-            }
-        });
-
-        return necessarilyCookies;
+        return ['strictly_necessary_cookies'];
     }
 
     saveConsent(categories) {
@@ -277,7 +272,7 @@ class CookiesSetting extends CookiesConsent {
             let checked = '';
             let disabledClass = '';
 
-            if (el) {
+            if (index === 'strictly_necessary_cookies') {
                 checked = 'checked';
                 disabledClass = 'class="disabled"';
             }
