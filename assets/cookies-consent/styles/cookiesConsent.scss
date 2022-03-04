@@ -106,6 +106,7 @@
     .__cookiesConsentSetting_categories {
       .__cookiesConsentSetting_category {
         margin-bottom: 1rem;
+
         label {
           font-size: 1.3rem;
           font-weight: bold;
@@ -127,6 +128,7 @@
 
         table {
           width: 100%;
+
           td {
             width: 50%;
           }
@@ -151,4 +153,20 @@
       }
     }
   }
+}
+
+.__cc_open {
+  background-image: url('../../assets/cookies-consent/images/icon-settings.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 35px;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  left: 5px;
+  border: 1px solid #024467;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
