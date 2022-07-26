@@ -29,10 +29,11 @@ class CookieConsent
     /**
      * CookieConsent public constructor.
      */
-    public function __construct()
+    public function __construct(string $token = null)
     {
         $this->ip = $_SERVER['REMOTE_ADDR'];
         $this->sessionId = session_id();
+        $this->token = $token;
     }
 
     /**
