@@ -150,9 +150,11 @@ class CookiesConsent {
 
     static allowScripts(categories) {
         if (categories) {
-            $.each(categories, function (index, el) {
-                $.each($('[data-cc_category="' + el + '"]'), function (index, el) {
-                    rebuildElement(el);
+            $( document ).ready(function() {
+                $.each(categories, function (index, el) {
+                    $.each($('[data-cc_category="' + el + '"]'), function (index, el) {
+                        rebuildElement(el);
+                    });
                 });
             });
         }
@@ -166,8 +168,8 @@ class CookiesConsent {
                 el.src = backUpSrc;
             } else {
                 let newInlineScript = el;
-                el.removeAttribute('data-cc_category');
-                el.setAttribute('type', 'text/javascript');
+                newInlineScript.removeAttribute('data-cc_category');
+                newInlineScript.setAttribute('type', 'text/javascript');
                 el.after(newInlineScript);
                 el.remove();
             }
